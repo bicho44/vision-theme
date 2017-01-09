@@ -92,6 +92,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/images\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1880,
+		"inputAbbreviatedPath": "\/assets\/images\/favicon.png",
+		"outputAbbreviatedPath": "\/assets\/images\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/vision-logo-bar.png": {
 		"fileType": 32768,
 		"ignore": 0,
