@@ -1,0 +1,212 @@
+/*.element {
+-webkit-animation: KEYFRAME-NAME 2s infinite;
+-moz-animation:    KEYFRAME-NAME 5s infinite;
+-o-animation:      KEYFRAME-NAME 5s infinite;
+animation:         KEYFRAME-NAME 5s infinite;
+}*/
+.navbar-default,
+.navbar-fixed-top {
+    transition: all .5s;
+}
+
+.listado-paises {
+
+  .argentina h2 {
+    padding-left: 30px;
+    background: url('../images/paises/argentina.png') no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+    margin-bottom: 10px;
+  }
+  .chile h2 {
+    padding-left: 30px;
+    background: url('../images/paises/chile.png') no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+  }
+  .uruguay h2 {
+    padding-left: 30px;
+    background: url('../images/paises/uruguay.png') no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+  }
+  .espana h2 {
+    padding-left: 30px;
+    background: url('../images/paises/espana.png') no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+  }
+  .republica-dominicana h2 {
+    padding-left: 30px;
+    background: url('../images/paises/dominicana.png') no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+  }
+}
+
+#totop {
+  color:fade(@white, 40%);
+  background-color: fade(darken(@brand-warning,30),20%);
+  position: fixed;
+  display: none;
+  outline: none;
+  right: 15px;
+  bottom: 15px;
+  border-color: fade(darken(@brand-warning,30),20%);
+  &:hover{
+    color:@white;
+    background-color: fade(darken(@brand-warning,25),70%);
+  }
+  @media (min-width: @screen-md-min) {
+    right: 40px;
+    bottom: 40px;
+  }
+
+}
+
+.wp-post-image{
+  .img-responsive();
+  margin-bottom: 20px;
+}
+
+.site-header {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.page-header {
+  margin-top: 0;
+  .page-title{
+    margin-top: 0;
+  }
+}
+
+.content-area{
+  margin-top: 65px;
+}
+
+/** Comentarios */
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    width: 50%;
+}
+
+.navbar-brand {
+  padding: 10px 15px 0 15px;
+}
+
+.image-thumbnail {
+  margin-bottom: 20px;
+}
+
+
+.well {
+  color:@color-fondo;
+  font-size: 12px;
+}
+
+.modal{
+  color:@color-fondo;
+  h4 {
+    color:@color-fondo;
+  }
+}
+.widget-area{
+  padding-top: 30px;
+}
+.widget-title{
+  font-size: 18px;
+}
+
+.calendar-table {
+  .table();
+}
+
+.thumbnail{
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+
+// Ultimas novedades
+.tres-columnas{
+  background-color: @gray-lighter;
+}
+.ultimas {
+    border-bottom: 1px solid @gray-light;
+    min-height: 70px;
+    margin: 6px 0;
+
+    &:last-child{
+      border-bottom: none;
+    }
+
+    .clearfix();
+
+    img{
+      float: left;
+      margin-right: 10px;
+    }
+    h4 {
+      margin-bottom: 3px;
+    }
+    p{
+      margin-bottom: 5px;
+
+    }
+    .entry-content{
+        margin-top: .5em;
+    }
+
+
+
+}
+
+
+//------------- FOOTER ----------//
+.wrapfooter {
+  background-color: @gray-dark;
+  padding:20px 0;
+  border-top: 5px solid @brand-primary;
+  color: @white;
+
+  /*&:before {
+    background-image: url('../images/linea-pie.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: Italianno;
+    font-size: 30px;
+    text-align: right;
+    content: 'Paises con la misma esencia';
+    color: @white;
+  }*/
+  h4{
+      color: @white;
+  }
+
+  .site-footer{
+
+    a {
+      color: @white;
+      text-transform: uppercase;
+    }
+
+    .site-info {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+}
+
+.menu-acompanan{
+  img {
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
