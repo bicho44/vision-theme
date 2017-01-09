@@ -49,7 +49,7 @@ if ($loop->have_posts()) {?>
     <article id="post-<?php the_ID(); ?>" <?php //post_class('col-md-2 col-sm-4 col-xs-6'); ?>>
       <div class="thumbnail">
         <?php
-        get_template_part('template-parts/content-archive', 'desta-news');
+        get_template_part('template-parts/content-archive', 'desta-news-gral');
         $x++;
         ?>
       </div>

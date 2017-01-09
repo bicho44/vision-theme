@@ -15,7 +15,7 @@ if (has_post_thumbnail()) {?>
 
     <a href="<?php the_permalink(); ?>">
           <?php  /* @todo Cambiar para que la imagen sea responsive */
-            the_post_thumbnail('show-archive', array('class'=>'align-center img-responsive'));
+            the_post_thumbnail('news-featured', array('class'=>'align-center img-responsive'));
             ?>
     </a>
 <?php } ?>

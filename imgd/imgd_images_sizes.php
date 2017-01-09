@@ -20,6 +20,9 @@ add_image_size('header-cropped', 1150, 300, true, array( 'center', 'top' ) );
 add_image_size('show-cropped', 340, 340, true);
 add_image_size('show-archive', 750, 200, true);
 
+add_image_size('news-featured', 750, 340, true);
+add_image_size('news-archive', 340, 340, true);
+
 /*add_image_size('tablet-v', 780, 400, true);
 add_image_size('phones', 480, 250, true);
 */
