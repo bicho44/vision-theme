@@ -1,8 +1,8 @@
 <?php
 /*
-Title: Turismo InterOceánico
+Title: Vision Options
 Setting: opciones_imgd
-Tab: Turismo Home Page
+Tab: Vision Home Page
 */
 
 piklist (
@@ -60,6 +60,24 @@ piklist (
     )
 );
 
+piklist('field', array(
+    'type' => 'text'
+,'field' => 'imgd_desta_news_cant'
+,'description' => __('Cuantas Noticias en el Home', 'imgd')
+,'value' => '4'
+,'label' => __('Cantidad', 'imgd')
+, 'conditions' => array(
+            array(
+                'field' => 'imgd_desta_news'
+                , 'value' => 1
+            )
+        )
+,'attributes' => array(
+        'class' => 'small-text'
+    )
+));
+
+
 piklist (
     'field',
     array(
@@ -78,6 +96,23 @@ piklist (
         'position' => 'wrap'
     )
 );
+
+piklist('field', array(
+    'type' => 'text'
+,'field' => 'imgd_desta_cant'
+,'description' => __('Cuantas Noticias Destacadas', 'imgd')
+,'value' => '6'
+,'label' => __('Cantidad', 'imgd')
+, 'conditions' => array(
+            array(
+                'field' => 'imgd_destaca'
+                , 'value' => 1
+            )
+        )
+,'attributes' => array(
+        'class' => 'small-text'
+    )
+));
 
 piklist (
     'field',

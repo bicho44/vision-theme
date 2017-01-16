@@ -1183,9 +1183,58 @@ table th[class*="col-"] {
 -o-animation:      KEYFRAME-NAME 5s infinite;
 animation:         KEYFRAME-NAME 5s infinite;
 }*/
+.site-header {
+  top: 10px;
+  right: 0;
+  left: 0;
+  z-index: 500;
+}
+.content-area {
+  margin-top: 65px;
+}
 .navbar-default,
 .navbar-fixed-top {
   transition: all .5s;
+}
+.navbar-fixed-top {
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all .5s;
+}
+.imgd-destacados {
+  background-color: #f0f3df;
+  padding: 16px 0;
+}
+.newsfeature article {
+  position: relative;
+}
+.newsfeature article header.destacados-caption {
+  transition: all .5s;
+  position: absolute;
+  bottom: 0;
+  background: #e57200;
+  padding: 10px 10px 0 10px;
+  min-width: 100%;
+  max-height: 45px;
+  overflow: hidden;
+  font-size: 12px;
+  color: white;
+}
+.newsfeature article header.destacados-caption a {
+  color: white;
+}
+.newsfeature article header.destacados-caption h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+.newsfeature article header.destacados-caption .destacados-caption-texto {
+  display: none;
+  padding-bottom: 10px;
+}
+.newsfeature article header.destacados-caption:hover {
+  max-height: 90px;
+}
+.newsfeature article header.destacados-caption:hover .destacados-caption-texto {
+  display: block;
 }
 .listado-paises .argentina h2 {
   padding-left: 30px;
@@ -1244,21 +1293,11 @@ animation:         KEYFRAME-NAME 5s infinite;
   height: auto;
   margin-bottom: 20px;
 }
-.site-header {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  left: 0;
-  z-index: 500;
-}
 .page-header {
   margin-top: 0;
 }
 .page-header .page-title {
   margin-top: 0;
-}
-.content-area {
-  margin-top: 65px;
 }
 /** Comentarios */
 .comment-form-author,

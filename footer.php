@@ -29,6 +29,6 @@
 	</div> <!-- #wrapfooter -->
 
 <?php wp_footer(); ?>
-
+</div><!-- end Page -->
 </body>
 </html>

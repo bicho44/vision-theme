@@ -94,16 +94,17 @@ add_action( 'after_setup_theme', 'turismointer_content_width', 0 );
  */
 function turismointer_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'imgd' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'imgd' ),
+		'name'          => esc_html__( 'Front Page Sidebar', 'imgd' ),
+		'id'            => 'front-page-sidebar',
+		'description'   => esc_html__( 'Area para un Aviso Publicitario o un Banner', 'imgd' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Linea columnas', 'imgd' ),
+		'name'          => esc_html__( 'Front Page Sidebar Linea columnas', 'imgd' ),
 		'id'            => 'sidebar-2',
 		'description'   => esc_html__( 'Area de Widgets para la línea de 3 columnas', 'imgd' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -111,6 +112,17 @@ function turismointer_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar Paginas', 'imgd' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'imgd' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	
 }
 add_action( 'widgets_init', 'turismointer_widgets_init' );
 

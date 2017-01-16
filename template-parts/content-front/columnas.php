@@ -1,4 +1,9 @@
 <?php
+/*
+* Tres columnas con espacio de menúes
+*
+*/
+
 // Acá seleciono las Páginas que voy a mostrar como destacados en la Home
 if (!isset($destacadosID)){
   $destacadosID = array();

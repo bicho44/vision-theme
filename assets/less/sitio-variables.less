@@ -25,6 +25,10 @@
 //------- Colores Vision
 @vision-azul-base: rgb(0,77,153);
 @vision-azul-intenso: rgb(43,41,96);
+@vision-verde: rgb(204,215,149);
+
+@vision-opuesto: spin(@vision-azul-base, 180);
+
 
 //------------ Colores
 @color-fondo: #fff;
@@ -88,7 +92,7 @@
 //== Navbar
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    60px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
@@ -96,7 +100,7 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             @brand-primary;
-@navbar-default-bg:                fade(#fff, 70);
+@navbar-default-bg:                #fff;
 @navbar-default-border:            darken(@navbar-default-color, 6.5%);
 
 // Navbar links

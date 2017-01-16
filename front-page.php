@@ -14,22 +14,24 @@ $opciones_imgd = get_option('opciones_imgd');
 
 $video = $opciones_imgd['imgd_video'][0];
 $videolink = $opciones_imgd['imgd_video_link'];
+
 $destacados = $opciones_imgd['imgd_destaca'][0];
+$destacadoscant = $opciones_imgd['imgd_desta_cant'][0];
+
 $destanews = $opciones_imgd['imgd_desta_news'][0];
+$destanewscant = $opciones_imgd['imgd_desta_news_cant'][0];
+
 $columnas = $opciones_imgd['imgd_columnas'][0];
 
 //echo piklist::pre($opciones_imgd);
-
 //echo piklist::pre($video);
 //var_dump($video);
 
-// Secciones Front Page
 
 /**
-
+* Secciones Front Page
 * 3 columnas
 * Paises, noticias y eventos, sponsors
-
 **/
 
  ?>
@@ -55,18 +57,28 @@ $columnas = $opciones_imgd['imgd_columnas'][0];
 
 <?php if ($destanews!=0){?>
 <?php
-include( locate_template( 'template-parts/content-front-destacados-news.php' ) );
+	include( locate_template( 'template-parts/content-front/destacados-news.php' ) );
 //get_template_part('template-parts/content-front-destacados'); ?>
 <?php } ?>
 
+<?php if ( is_active_sidebar( 'front-page-sidebar' ) ) : ?>
+<div class="container">
+	<div class="row">
+    	<?php dynamic_sidebar( 'front-page-sidebar' ); ?>
+	</div>
+</div>
+<? endif; ?>
+
+
 <?php if ($destacados!=0){?>
 <?php
-include( locate_template( 'template-parts/content-front-destacados.php' ) );
+	include( locate_template( 'template-parts/content-front/destacados.php' ) );
 //get_template_part('template-parts/content-front-destacados'); ?>
 <?php } ?>
 
 <?php if ($columnas!=0){?>
-<?php include( locate_template( 'template-parts/content-front-columnas.php' ) );
+<?php 
+	include( locate_template( 'template-parts/content-front/columnas.php' ) );
 //get_template_part('template-parts/content-front-columnas'); ?>
 <?php } ?>
 

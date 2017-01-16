@@ -293,7 +293,11 @@ function get_shortentext($text, $chars_limit = 18) { // Function name ShortenTex
   $chars_text = strlen($text);
   $text = $text." ";
 
+  $text = strip_tags($text);
+  $text = preg_replace('`\[[^\]]*\]`', '', $text);
+
   $text = substr($text,0,$chars_limit);
+
   $text = substr($text,0,strrpos($text,' '));
 
   if ($chars_text > $chars_limit)
@@ -309,16 +313,16 @@ function get_shortentext($text, $chars_limit = 18) { // Function name ShortenTex
  */
 function get_imgd_content($limit=35,$content="") {
 
-		global $post;
+    global $post;
 
-		if($content==''){
-		$content = get_the_content();
-		$content = preg_replace('/<img[^>]+./','', $content);
-    $content = explode(' ', $content, $limit);
-	} else {
-		$content = preg_replace('/<img[^>]+./','', $content);
-		$content = explode(' ', $content, $limit);
-	}
+    if($content==''){
+        $content = get_the_content();
+        $content = preg_replace('/<img[^>]+./','', $content);
+        $content = explode(' ', $content, $limit);
+    } else {
+        $content = preg_replace('/<img[^>]+./','', $content);
+        $content = explode(' ', $content, $limit);
+    }
 
     if (count($content) >= $limit) {
         array_pop($content);

@@ -8,14 +8,19 @@
 (function(){
     //caches a jQuery object containing the header element
     var navbar = $(".navbar-default");
+
     $(window).scroll(function() {
+
         var scroll = $(window).scrollTop();
+
         if (scroll >= navbar.outerHeight(true)) {
             navbar.addClass("navbar-fixed-top");
         } else {
             navbar.removeClass("navbar-fixed-top");
         }
+        
     });
+
 }());
 
 (function(){

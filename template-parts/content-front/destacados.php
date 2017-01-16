@@ -1,16 +1,20 @@
 <?php
+/* Noticias Destacadas */
+
 // Acá seleciono las Páginas que voy a mostrar como destacados en la Home
 $args = array('post_type' => array('post', 'page','imgd_programa', 'portfolio_item', 'imgd_productos', 'imgd_casino_shows'),
 'meta_key' => 'imgd_home',
 'meta_value' => '1',
 'post_status' => 'publish',
-'posts_per_page' => 6,
+'posts_per_page' => $destacadoscant,
 'ignore_sticky_posts'=>true
 );
+
 $loop = new WP_Query($args);
 
 if ($loop->have_posts()) {?>
-  <section class="container imgd-destacados">
+  <section class="imgd-destacados">
+  <div class="container">
     <div class="row">
     <?php
     $x = 0;
@@ -20,16 +24,17 @@ if ($loop->have_posts()) {?>
     $destacadosID[] = get_the_ID();
     ?>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-2 col-sm-4 col-xs-6'); ?>>
-      <div class="thumbnail">
+    <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-3'); ?>>
+      
       <?php
-      get_template_part('template-parts/content-archive', 'destacados');
+      get_template_part('template-parts/content-front/ficha', 'destacada');
       $x++;
       ?>
-    </div>
-    </article>
+
+    </article> <!-- End article <?php the_ID(); ?> -->
   <?php endwhile; ?>
-  </div>
+  </div> <!-- End Row-->
+  </div><!-- End Container-->
 </section>
 <?php } ?>
 <?php wp_reset_query();
