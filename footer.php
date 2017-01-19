@@ -14,20 +14,21 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 				<div class="row">
-					<?php if ( is_active_sidebar( 'footer-1-sidebar' ) ) : ?>
+					<?php if ( is_active_sidebar( 'footer-1-sidebar' ) ) { ?>
     					<?php dynamic_sidebar( 'footer-1-sidebar' ); ?>
-					<? endif; ?>
+					<?php } ?>
 					
-					<?php if ( is_active_sidebar( 'footer-2-sidebar' ) ) : ?>
+					<?php if ( is_active_sidebar( 'footer-2-sidebar' ) ) { ?>
 							<?php dynamic_sidebar( 'footer-2-sidebar' ); ?>
-					<? endif; ?>
+					<?php } ?>
 
 					<div class="col-md-4">
 					<!-- Menu Social -->
 					<?php get_template_part('template-parts/menu', 'social'); ?>
-					<?php if ( is_active_sidebar( 'footer-3-sidebar' ) ) : ?>
+
+					<?php if ( is_active_sidebar( 'footer-3-sidebar' ) ) { ?>
 							<?php dynamic_sidebar( 'footer-3-sidebar' ); ?>
-					<? endif; ?>
+					<?php } ?>
 					</div>
 				</div>
 			</div><!-- End Container -->

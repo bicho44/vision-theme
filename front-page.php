@@ -55,25 +55,24 @@ $columnas = $opciones_imgd['imgd_columnas'][0];
 }
 ?>
 
-<?php if ($destanews!=0){?>
+<?php if ($destanews!=0) {?>
 <?php
 	include( locate_template( 'template-parts/content-front/destacados-news.php' ) );
 //get_template_part('template-parts/content-front-destacados'); ?>
 <?php } ?>
 
-<?php if ( is_active_sidebar( 'front-page-sidebar' ) ) : ?>
+<?php if ( is_active_sidebar( 'front-page-sidebar' ) ) { ?>
 <div class="container">
 	<div class="row">
     	<?php dynamic_sidebar( 'front-page-sidebar' ); ?>
 	</div>
 </div>
-<? endif; ?>
-
+<?php } ?>
 
 <?php if ($destacados!=0){?>
 <?php
 	include( locate_template( 'template-parts/content-front/destacados.php' ) );
-//get_template_part('template-parts/content-front-destacados'); ?>
+	//get_template_part('template-parts/content-front-destacados'); ?>
 <?php } ?>
 
 <?php if ($columnas!=0){?>
@@ -84,3 +83,4 @@ $columnas = $opciones_imgd['imgd_columnas'][0];
 
 <?php
 get_footer();
+?>
