@@ -10,7 +10,7 @@ if ( is_active_sidebar( 'sidebar-3' )  ) : ?>
   <aside id="terciary" class="widget-area col-md-3" role="complementary">
   <?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
     <?php dynamic_sidebar( 'sidebar-3' ); ?>
-  <? endif; ?>
+  <?php endif; ?>
 
   </aside><!-- #secondary -->
-<? endif; ?>
+<?php endif; ?>

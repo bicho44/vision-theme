@@ -25,7 +25,7 @@ if (  has_nav_menu( 'secondary' ) || is_active_sidebar( 'sidebar-2' )  ) : ?>
 
   <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
     <?php dynamic_sidebar( 'sidebar-2' ); ?>
-  <? endif; ?>
+  <?php endif; ?>
 
   </aside><!-- #secondary -->
-<? endif; ?>
+<?php endif; ?>
