@@ -1735,10 +1735,10 @@ a .icon-flip-vertical:before {
   position: relative;
 }
 #menu-social ul li a {
-  color: #004d99;
+  color: #fff;
 }
 #menu-social ul li a:hover {
-  color: #cccccc;
+  color: #7f7f7f;
 }
 #menu-social li a::before {
   content: '\f408';
@@ -1750,10 +1750,10 @@ a .icon-flip-vertical:before {
   -webkit-font-smoothing: antialiased;
 }
 #menu-social li a::before:hover {
-  color: #fff;
+  color: #b3b3b3;
 }
 #barra-social ul li:hover {
-  background-color: #004d99;
+  background-color: transparent;
 }
 #barra-social ul li a[href*="facebook.com"] {
   background-color: #0A246A;
@@ -6642,6 +6642,7 @@ animation:         KEYFRAME-NAME 5s infinite;
 .imgd-destacados {
   background-color: #f0f3df;
   padding: 16px 0;
+  margin-top: 20px;
 }
 .newsfeature article {
   position: relative;
@@ -6652,7 +6653,7 @@ animation:         KEYFRAME-NAME 5s infinite;
   position: absolute;
   bottom: 0;
   background: #e57200;
-  padding: 10px 10px 0 10px;
+  padding: 10px;
   min-width: 100%;
   max-height: 45px;
   overflow: hidden;
@@ -6746,7 +6747,7 @@ animation:         KEYFRAME-NAME 5s infinite;
   width: 50%;
 }
 .navbar-brand {
-  padding: 10px 15px 0 15px;
+  padding: 15px 15px 0 15px;
 }
 .image-thumbnail {
   margin-bottom: 20px;
@@ -6850,32 +6851,33 @@ animation:         KEYFRAME-NAME 5s infinite;
 .wrapfooter {
   background-color: #333333;
   padding: 20px 0;
-  border-top: 5px solid #004d99;
+  border-top: 2px solid #777777;
   color: #fff;
-  /*&:before {
-    background-image: url('../images/linea-pie.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    font-family: Italianno;
-    font-size: 30px;
-    text-align: right;
-    content: 'Paises con la misma esencia';
-    color: @white;
-  }*/
+  margin-top: 20px;
 }
 .wrapfooter h4 {
   color: #fff;
 }
+.wrapfooter .site-footer ul {
+  padding-left: 0;
+  list-style: none;
+}
 .wrapfooter .site-footer a {
   color: #fff;
-  text-transform: uppercase;
 }
 .wrapfooter .site-footer .site-info {
   text-align: center;
   font-size: 10px;
 }
-.menu-acompanan img {
-  margin-bottom: 5px;
-  margin-right: 5px;
+.credits {
+  font-size: 10px;
+  text-align: center;
+  color: #222222;
+}
+.credits a {
+  color: #222222;
+}
+.credits a:hover {
+  color: #222222;
 }
 /*# sourceMappingURL=style.css.map */

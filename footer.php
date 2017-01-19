@@ -14,18 +14,29 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-offset-8 col-md-3"><!-- Menu Social -->
-						<?php get_template_part('template-parts/menu', 'social'); ?>
+					<?php if ( is_active_sidebar( 'footer-1-sidebar' ) ) : ?>
+    					<?php dynamic_sidebar( 'footer-1-sidebar' ); ?>
+					<? endif; ?>
+					
+					<?php if ( is_active_sidebar( 'footer-2-sidebar' ) ) : ?>
+							<?php dynamic_sidebar( 'footer-2-sidebar' ); ?>
+					<? endif; ?>
+
+					<div class="col-md-4">
+					<!-- Menu Social -->
+					<?php get_template_part('template-parts/menu', 'social'); ?>
+					<?php if ( is_active_sidebar( 'footer-3-sidebar' ) ) : ?>
+							<?php dynamic_sidebar( 'footer-3-sidebar' ); ?>
+					<? endif; ?>
 					</div>
 				</div>
-				<div class="row">
-						<?php //get_template_part('template-parts/menu', 'acompanan'); ?>
-				</div>
-				<div class="row">
-					<?php imgd_credits(); ?>
-				</div>
-			</div>
+			</div><!-- End Container -->
 		</footer>
+		<div class="container">
+			<div class="credits row">
+				<?php imgd_credits(); ?>
+			</div>
+		</div>
 	</div> <!-- #wrapfooter -->
 
 <?php wp_footer(); ?>

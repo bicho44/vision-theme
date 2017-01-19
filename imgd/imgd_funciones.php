@@ -160,7 +160,7 @@ function imgd_credits($inicio='',$p = true) {
     If ($inicio != ''){
         $fecha = $inicio. " - ";
     }
-    $copy = "Copyright ".$fecha.date('Y')." - Federico Reinoso";
+    $copy = 'Copyright '.$fecha.date('Y').' - <a href="http://imgdigital.com.ar/">Federico Reinoso</a>';
     if($p){
         echo $copy;
     } else {
@@ -293,7 +293,7 @@ function get_shortentext($text, $chars_limit = 18) { // Function name ShortenTex
   $chars_text = strlen($text);
   $text = $text." ";
 
-  $text = strip_tags($text);
+  $text = trim(strip_tags( $text ));
   $text = preg_replace('`\[[^\]]*\]`', '', $text);
 
   $text = substr($text,0,$chars_limit);

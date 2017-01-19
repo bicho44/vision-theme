@@ -36,7 +36,7 @@ if ($notitle !== '0' ) { ?>
        </h3>
         <?php
         //the_title(sprintf('<h3 class="align-center"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>');
-        //imgd_content(35);
+        shortentext(get_the_content(), 60);
         ?>
     </header><!-- .entry-header -->
 <?php } ?>

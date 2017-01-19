@@ -4,7 +4,7 @@ function wpb_add_google_fonts() {
 	wp_enqueue_style( 'wpb-google-fonts', '//fonts.googleapis.com/css?family=Suez-One-Regular|Italianno|Open+Sans:300,700|Open+Sans+Condensed:300,700', false );
 }
 
-add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+//add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
 /**
  * Turismo InterOceánico functions and definitions.
@@ -116,13 +116,42 @@ function turismointer_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar Paginas', 'imgd' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'imgd' ),
+		'description'   => esc_html__( 'Columna General para las páginas y noticias.', 'imgd' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer SideBar 1', 'imgd' ),
+		'id'            => 'footer-1-sidebar',
+		'description'   => esc_html__( 'Primer espacio de Footer.', 'imgd' ),
+		'before_widget' => '<section id="%1$s" class="widget col-md-4 %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer SideBar 2', 'imgd' ),
+		'id'            => 'footer-2-sidebar',
+		'description'   => esc_html__( 'Segundo espacio de Footer.', 'imgd' ),
+		'before_widget' => '<section id="%1$s" class="widget col-md-4 %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 	
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer SideBar 3', 'imgd' ),
+		'id'            => 'footer-3-sidebar',
+		'description'   => esc_html__( 'Segundo espacio de Footer.', 'imgd' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'turismointer_widgets_init' );
 

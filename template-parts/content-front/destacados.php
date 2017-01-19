@@ -14,7 +14,10 @@ $loop = new WP_Query($args);
 
 if ($loop->have_posts()) {?>
   <section class="imgd-destacados">
+
+
   <div class="container">
+       <h2> Noticias Destacadas</h2>
     <div class="row">
     <?php
     $x = 0;
