@@ -100,6 +100,8 @@ require get_template_directory() . '/imgd/imgd_link_navigation.php';
 //require get_template_directory() . '/inc/imgd/imgd_onepage_settings.php'; // Estas opciones estaban pensadas para el theme de onepagescroll
 
 
+require get_template_directory() . '/imgd/imgd_shortcode.php';
+
 
 
 /**
