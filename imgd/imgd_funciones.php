@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Jquery enqueue
  * @package: IMGD Framework
@@ -96,12 +95,17 @@ require get_template_directory() . '/imgd/imgd_link_navigation.php';
 //require get_template_directory() . '/imgd/imgd_pagination.php';
 //require get_template_directory() . '/inc/imgd/imgd_it_exchange.php';
 //require get_template_directory() . '/imgd/imgd_archive_order.php';
-//require get_template_directory() . '/imgd/imgd_settings.php';
+require get_template_directory() . '/imgd/imgd_settings.php';
 //require get_template_directory() . '/inc/imgd/imgd_onepage_settings.php'; // Estas opciones estaban pensadas para el theme de onepagescroll
-
 
 require get_template_directory() . '/imgd/imgd_shortcode.php';
 
+/* Google Fonts */
+function wpb_add_google_fonts() {
+	wp_enqueue_style( 'wpb-google-fonts', '//fonts.googleapis.com/css?family=Suez-One-Regular|Italianno|Open+Sans:300,700|Open+Sans+Condensed:300,700', false );
+}
+
+//add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
 
 /**

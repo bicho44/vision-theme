@@ -1,11 +1,4 @@
 <?php
-/* Google Fonts */
-function wpb_add_google_fonts() {
-	wp_enqueue_style( 'wpb-google-fonts', '//fonts.googleapis.com/css?family=Suez-One-Regular|Italianno|Open+Sans:300,700|Open+Sans+Condensed:300,700', false );
-}
-
-//add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
-
 /**
  * Turismo InterOceánico functions and definitions.
  *
@@ -51,7 +44,7 @@ function turismointer_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'turismointer' ),
+		'primary' => esc_html__( 'Primary', 'imgd' ),
 	) );
 
 	/*
@@ -67,10 +60,10 @@ function turismointer_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'turismointer_custom_background_args', array(
+	/*add_theme_support( 'custom-background', apply_filters( 'turismointer_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
-	) ) );
+	) ) );*/
 }
 endif;
 add_action( 'after_setup_theme', 'turismointer_setup' );
