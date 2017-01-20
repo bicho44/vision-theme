@@ -21,7 +21,7 @@ if (has_post_thumbnail()) { ?>
 <?php } ?>
 
 <?php
-$notitle = get_post_meta(get_the_ID(), 'imgd_sin_titulo', true);
+//$notitle = get_post_meta(get_the_ID(), 'imgd_sin_titulo', true);
 //echo var_dump($notitle);
 
 if ($notitle !== '0' ) { ?>

@@ -55,7 +55,7 @@ if ($loop->have_posts()) {?>
       } 
     if ($x>0) {
       ?>
-        <article id="post-<?php the_ID(); ?>" <?php if_mobile_get_me_this_class('class="col-sm-4"', true); //post_class('col-md-2 col-sm-4 col-xs-6'); ?>>
+        <article id="post-<?php the_ID(); ?>" <?php if_mobile_get_me_this_class('class="col-sm-6"', true); //post_class('col-md-2 col-sm-4 col-xs-6'); ?>>
           <div class="thumbnail">
             <?php get_template_part('template-parts/content-archive', 'desta-news-gral'); ?>
           </div>
@@ -65,6 +65,7 @@ if ($loop->have_posts()) {?>
     ?> 
     <?php endwhile; ?>
     </div> <!-- End Columna secundaria -->
+
   </div> <!-- End row -->
 </section>
 <?php } ?>

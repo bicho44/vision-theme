@@ -61,10 +61,12 @@ $columnas = $opciones_imgd['imgd_columnas'][0];
 //get_template_part('template-parts/content-front-destacados'); ?>
 <?php } ?>
 
-<?php if ( is_active_sidebar( 'front-page-sidebar' ) ) { ?>
-<div class="container align-center">
-    	<?php dynamic_sidebar( 'front-page-sidebar' ); ?>
-</div>
+<?php if (!$isMobile->isMobile()) {?>
+	<?php if ( is_active_sidebar( 'front-page-sidebar' ) ) { ?>
+	<div class="container align-center">
+			<?php dynamic_sidebar( 'front-page-sidebar' ); ?>
+	</div>
+	<?php } ?>
 <?php } ?>
 
 <?php if ($destacados!=0){?>
