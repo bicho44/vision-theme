@@ -62,10 +62,8 @@ $columnas = $opciones_imgd['imgd_columnas'][0];
 <?php } ?>
 
 <?php if ( is_active_sidebar( 'front-page-sidebar' ) ) { ?>
-<div class="container">
-	<div class="row">
+<div class="container align-center">
     	<?php dynamic_sidebar( 'front-page-sidebar' ); ?>
-	</div>
 </div>
 <?php } ?>
 

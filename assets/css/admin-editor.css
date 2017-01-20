@@ -1197,8 +1197,9 @@ animation:         KEYFRAME-NAME 5s infinite;
   transition: all .5s;
 }
 .navbar-fixed-top {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.95);
   transition: all .5s;
+  height: 60px;
 }
 .imgd-destacados {
   background-color: #f0f3df;
@@ -1207,6 +1208,14 @@ animation:         KEYFRAME-NAME 5s infinite;
 }
 .newsfeature article {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .newsfeature article header.destacados-caption {
+    max-height: 90px;
+  }
+  .newsfeature article header.destacados-caption .destacados-caption-texto {
+    display: block;
+  }
 }
 .newsfeature article header.destacados-caption {
   transition: all .5s;

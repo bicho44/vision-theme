@@ -79,6 +79,21 @@ function imgd_theme_add_font_editor_styles() {
 add_action( 'after_setup_theme', 'imgd_theme_add_font_editor_styles' );
 
 
+// Include and instantiate the class.
+require_once get_template_directory() . '/imgd/mobile/Mobile_Detect.php';
+$isMobile = new Mobile_Detect;
+
+function if_mobile_get_me_this_class($class='', $echo='false'){
+    global $isMobile;
+    if ($isMobile->isMobile()){
+        if ($echo){
+            echo $class;
+        } else {
+            return $class;
+        }
+    }
+}
+
 /**
  * Otros elementos para este tema
  *

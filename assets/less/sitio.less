@@ -22,8 +22,9 @@ animation:         KEYFRAME-NAME 5s infinite;
 }
 
 .navbar-fixed-top {
-    background-color: fade(#fff, 70);
+    background-color: fade(#fff, 95);
     transition: all .5s;
+    height: 60px;
 }
 
 .imgd-destacados-news {
@@ -39,6 +40,17 @@ animation:         KEYFRAME-NAME 5s infinite;
 .newsfeature {
     article {
         position: relative;
+
+        @media screen and (min-width: @screen-sm-min) {
+            header.destacados-caption {
+                max-height: 90px;
+                .destacados-caption-texto {
+                    display: block;
+                }
+            }
+        }
+
+
         header.destacados-caption {
             transition: all .5s;
             position: absolute;
@@ -57,10 +69,14 @@ animation:         KEYFRAME-NAME 5s infinite;
                 margin-top: 0;
                 font-size: 20px;
             }
+
             .destacados-caption-texto {
                 display: none;
                 padding-bottom: 10px;
             }
+            // Scale up controls for tablets and up
+            
+            
             &:hover {
                 max-height: 90px;
                 .destacados-caption-texto {

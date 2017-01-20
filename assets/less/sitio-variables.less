@@ -92,9 +92,9 @@
 //== Navbar
 
 // Basics of a navbar
-@navbar-height:                    60px;
+@navbar-height:                    70px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-border-radius:             @border-radius-base;
+@navbar-border-radius:             0;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
@@ -119,7 +119,7 @@
 
 // Navbar toggle
 @navbar-default-toggle-hover-bg:           lighten(@brand-primary, 20%);
-@navbar-default-toggle-icon-bar-bg:        darken(@navbar-default-bg, 6.5%);
+@navbar-default-toggle-icon-bar-bg:        darken(@brand-primary, 6.5%);
 @navbar-default-toggle-border-color:       lighten(@brand-primary, 20%);
 
 
@@ -162,7 +162,6 @@
 
 //** Deprecated `@dropdown-caret-color` as of v3.1.0
 @dropdown-caret-color:           #000;
-
 
 
 //==== Footer Area
