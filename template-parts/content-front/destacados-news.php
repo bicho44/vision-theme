@@ -15,23 +15,19 @@ if ($loop->have_posts()) {?>
   <div class="row newsfeature">
       <?php
       $x = 0;
-      $destacadosnewsID = array();
+      $destacadosnewsID = array();  
 
-      while ($loop->have_posts()) : $loop->the_post();
+// Exclude tablets.
+if (!$isMobile->isMobile() && !$isMobile->isTablet() ) {  ?>
+<?php 
+while ($loop->have_posts()) : $loop->the_post();
       $destacadosnewsID[] = get_the_ID();
-      
-  /*
-  2 columnas
-  1 feature
-  3 sub artiuclos
-  */
-  ?>
-
+?>
   <?php
   if ($x==0) {
   ?>
   <!-- Columna Principal -->
-  <div class="news-principal col-md-8 col-sm-12">
+  <div class="news-principal col-md-8">
     <article id="post-<?php the_ID(); ?>">
       <div class="thumbnail">
         <?php get_template_part('template-parts/content-archive', 'desta-news'); ?>
@@ -40,33 +36,37 @@ if ($loop->have_posts()) {?>
   </div>
   <!-- End Columna Principal -->
 
-    <?php
-    if ( $isMobile->isMobile() ) {?>
-    <div class="news-principal">
-    <?php
-    } else {
-      ?>
-    <!-- Columna Secundaria -->
-    <div class="news-principal col-md-4">
-    <?php
-    }
-    ?>
+  <!-- Columna Secundaria -->
+  <div class="news-principal col-md-4">
       <?php
       } 
     if ($x>0) {
       ?>
-        <article id="post-<?php the_ID(); ?>" <?php if_mobile_get_me_this_class('class="col-sm-6"', true); //post_class('col-md-2 col-sm-4 col-xs-6'); ?>>
+        <article id="post-<?php the_ID(); ?>" <?php //post_class('col-md-2 col-sm-4 col-xs-6'); ?>>
           <div class="thumbnail">
             <?php get_template_part('template-parts/content-archive', 'desta-news-gral'); ?>
           </div>
         </article>
-    <?php } 
-     $x++;
-    ?> 
-    <?php endwhile; ?>
+    <?php } ?> 
+    
+  <?php $x++; ?>
+<?php endwhile; ?>
+
     </div> <!-- End Columna secundaria -->
 
+<?php } else { ?>
+
+<div class="news-principal col-md-4">
+    <article id="post-<?php the_ID(); ?>">
+      <div class="thumbnail">
+        <?php get_template_part('template-parts/content-archive', 'desta-news'); ?>
+      </div><!-- End Thumbanil -->
+    </article> 
+  </div>
+<?php } ?>
+
   </div> <!-- End row -->
+
 </section>
 <?php } ?>
 <?php wp_reset_query();
