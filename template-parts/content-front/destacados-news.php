@@ -55,7 +55,10 @@ while ($loop->have_posts()) : $loop->the_post();
     </div> <!-- End Columna secundaria -->
 
 <?php } else { ?>
-
+<?php 
+while ($loop->have_posts()) : $loop->the_post();
+      $destacadosnewsID[] = get_the_ID();
+?>
 <div class="news-principal col-md-4">
     <article id="post-<?php the_ID(); ?>">
       <div class="thumbnail">
@@ -63,8 +66,10 @@ while ($loop->have_posts()) : $loop->the_post();
       </div><!-- End Thumbanil -->
     </article> 
   </div>
-<?php } ?>
 
+  <?php $x++; ?>
+<?php endwhile; ?>
+<?php } ?>
   </div> <!-- End row -->
 
 </section>
