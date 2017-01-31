@@ -31,7 +31,7 @@ if ($notitle !== '0' ) { ?>
         ?>
         <h3 class="align-center">
           <a href="<?php the_permalink(); ?>" rel="bookmark">
-           <?php shortentext(get_the_title(), 35);?>
+           <?php shortentext(get_the_title(), 40);?>
          </a>
        </h3>
         <?php

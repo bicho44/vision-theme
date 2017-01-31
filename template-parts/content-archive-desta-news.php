@@ -31,14 +31,14 @@ if ($notitle !== '0' ) { ?>
         ?>
         <h3 class="align-center">
           <a href="<?php the_permalink(); ?>" rel="bookmark">
-           <?php shortentext(get_the_title(), 55);?>
+           <?php shortentext(get_the_title(), 65);?>
          </a>
        </h3>
        <div class="destacados-caption-texto">
         <?php
         //the_title(sprintf('<h3 class="align-center"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>');
         //imgd_content(35);
-        shortentext(get_the_content(), 55); 
+        shortentext(get_the_content(), 100); 
         ?>
         </div>
     </header><!-- .entry-header -->
