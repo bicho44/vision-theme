@@ -1468,7 +1468,7 @@ fieldset[disabled] a.more-link {
   text-align: right;
 }
 .entry-header .entry-meta .byline {
-  font-style: bold;
+  font-weight: bold;
 }
 .wrapfooter {
   background-color: #333333;
