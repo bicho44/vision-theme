@@ -23,7 +23,8 @@
 	<div class="entry-content">
 
 		<?php
-			imgd_content( 15);
+			shortentext(get_the_content(), 200); 
+			//imgd_content( 15);
 		?>
 	</div><!-- .entry-content -->
 
