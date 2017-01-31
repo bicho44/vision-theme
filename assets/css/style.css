@@ -6929,6 +6929,12 @@ fieldset[disabled] a.more-link {
 .ultimas .entry-content {
   margin-top: .5em;
 }
+.entry-header .entry-meta {
+  text-align: right;
+}
+.entry-header .entry-meta .byline {
+  font-style: bold;
+}
 .wrapfooter {
   background-color: #333333;
   padding: 20px 0;
