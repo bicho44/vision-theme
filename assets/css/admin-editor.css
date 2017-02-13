@@ -150,7 +150,6 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -173,7 +172,6 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 h4 small,
@@ -337,7 +335,7 @@ a.bg-danger:focus {
 }
 .page-header {
   padding-bottom: 9px;
-  margin: 40px 0 20px;
+  margin: 0 0 40px 20px;
   border-bottom: 1px solid #eeeeee;
 }
 ul,
@@ -1189,22 +1187,17 @@ animation:         KEYFRAME-NAME 5s infinite;
   left: 0;
   z-index: 500;
 }
-.content-area {
-  margin-top: 65px;
-}
-.navbar-default,
-.navbar-fixed-top {
-  transition: all .5s;
-}
 .navbar-fixed-top {
   background-color: rgba(255, 255, 255, 0.95);
-  transition: all .5s;
   height: 60px;
 }
 .imgd-destacados {
   background-color: #f0f3df;
   padding: 16px 0;
   margin-top: 20px;
+}
+#carrousel-bootstrap {
+  margin-bottom: 10px;
 }
 .newsfeature article {
   position: relative;
@@ -1233,7 +1226,6 @@ animation:         KEYFRAME-NAME 5s infinite;
   color: white;
 }
 .newsfeature article header.destacados-caption h3 {
-  margin-top: 0;
   font-size: 20px;
 }
 .newsfeature article header.destacados-caption .destacados-caption-texto {
@@ -1374,7 +1366,7 @@ fieldset[disabled] a.more-link {
   padding: 15px 15px 0 15px;
 }
 .image-thumbnail {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .well {
   color: #fff;
@@ -1438,7 +1430,16 @@ fieldset[disabled] a.more-link {
 .ultimas {
   border-bottom: 1px solid #777777;
   min-height: 70px;
-  margin: 6px 0;
+  /*h4 {
+        margin-bottom: 3px;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    .entry-content {
+        margin-top: .5em;
+    }
+    */
 }
 .ultimas:last-child {
   border-bottom: none;
@@ -1454,15 +1455,6 @@ fieldset[disabled] a.more-link {
 .ultimas img {
   float: left;
   margin-right: 10px;
-}
-.ultimas h4 {
-  margin-bottom: 3px;
-}
-.ultimas p {
-  margin-bottom: 5px;
-}
-.ultimas .entry-content {
-  margin-top: .5em;
 }
 .entry-header .entry-meta {
   text-align: right;

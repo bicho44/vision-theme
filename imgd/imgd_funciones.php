@@ -50,8 +50,9 @@ add_action( 'wp_enqueue_scripts', 'imgdigital_scripts' );
 
 /** Definir el largo de los excerpt */
 define('POST_EXCERPT_LENGTH', 55);
+
 /** Enable to load jQuery from the Google CDN */
-add_theme_support('jquery-cdn');
+//add_theme_support('jquery-cdn');
 
 /**
 * Agregar el Back to Top

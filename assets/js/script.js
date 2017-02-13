@@ -14,13 +14,12 @@
         var scroll = $(window).scrollTop();
 
         if (scroll >= navbar.outerHeight(true)) {
-            navbar.addClass("navbar-fixed-top");
+            navbar.addClass("slideInDown navbar-fixed-top");
         } else {
-            navbar.removeClass("navbar-fixed-top");
+            navbar.removeClass("slideInDown navbar-fixed-top");
         }
         
     });
-
 }());
 
 (function(){

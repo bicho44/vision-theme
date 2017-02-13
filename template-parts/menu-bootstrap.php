@@ -9,7 +9,7 @@
  */
 ?>
 <!-- <div class="container"> -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default animate">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">

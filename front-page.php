@@ -12,6 +12,8 @@ get_header(); ?>
 <?php
 $opciones_imgd = get_option('opciones_imgd');
 
+$description = $opciones_imgd['imgd_description'][0];
+
 $video = $opciones_imgd['imgd_video'][0];
 $videolink = $opciones_imgd['imgd_video_link'];
 
@@ -30,6 +32,13 @@ $slider = $opciones_imgd['imgd_slider'][0];
 //var_dump($video);
 
  ?>
+<?php if($description!=0): ?>
+<div id="description" class="container">
+	<blockquote>
+	<?php echo bloginfo( 'description' );?>
+	</blockquote>
+</div>
+<?php endif; ?>
  <?php
  while ( have_posts() ) : the_post();
  	the_content();
