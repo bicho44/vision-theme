@@ -39,11 +39,7 @@ $slider = $opciones_imgd['imgd_slider'][0];
 	</blockquote>
 </div>
 <?php endif; ?>
- <?php
- while ( have_posts() ) : the_post();
- 	the_content();
- endwhile; // End of the loop.
- ?>
+
 
  <?php
  if ($video!=0){
@@ -78,6 +74,12 @@ $slider = $opciones_imgd['imgd_slider'][0];
 <?php if ($destacados!=0){?>
 	<?php include( locate_template( 'template-parts/content-front/destacados.php' ) ); ?>
 <?php } ?>
+
+ <?php
+ while ( have_posts() ) : the_post();
+ 	the_content();
+ endwhile; // End of the loop.
+ ?>
 
 <?php if ($columnas!=0){?>
 	<?php include( locate_template( 'template-parts/content-front/columnas.php' ) ); ?>
