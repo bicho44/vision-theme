@@ -135,12 +135,12 @@ foreach ($registered_post_types as $post_type => $value)
   piklist('field', array(
     'type' => 'select'
     ,'field' => 'imgd_slider_size'
-    , 'label' => __('Tamaño imagen del Slider', 'imgd')
+    ,'label' => __('Tamaño imagen del Slider', 'imgd')
     ,'choices' =>  get_intermediate_image_names()
     ,'value' => 'thumbnail'
     ,'conditions' => array(
                         array(
-                            'field' => 'imgd_programa_thumb'
+                            'field' => 'imgd_slider'
                             , 'value' => 1
                         )
         )
