@@ -145,7 +145,7 @@ if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 	}
 }
 
-
+if (!function_exists('get_intermediate_image_names')){
 /**
 * Get the list of images Sizes in a array
 *
@@ -249,4 +249,6 @@ function get_image_height( $size ) {
 	}
 
 	return false;
+}
+
 }

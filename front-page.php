@@ -26,6 +26,7 @@ $destanewscant = $opciones_imgd['imgd_desta_news_cant'][0];
 $columnas = $opciones_imgd['imgd_columnas'][0];
 
 $slider = $opciones_imgd['imgd_slider'][0];
+$slider_size = $opciones_imgd['imgd_slider_size'];
 
 //echo piklist::pre($opciones_imgd);
 //echo piklist::pre($video);

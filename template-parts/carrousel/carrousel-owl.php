@@ -19,7 +19,7 @@ while ($loop->have_posts()) : $loop->the_post();
 
         /* Obtengo el URL de la imagen principal */
         $post_thumbnail_id = imgd_get_slideshow_thumbnail_id(get_the_ID());
-        $html = wp_get_attachment_image_src($post_thumbnail_id, 'full-cropped');
+        $html = wp_get_attachment_image_src($post_thumbnail_id, $slider_size );
 
         $carrousel .='<a href="' . get_permalink() . '">';
         $carrousel .= '<img src="' . $html[0] . '" alt="' . get_the_title() . '">';
