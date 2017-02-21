@@ -1,10 +1,8 @@
 <?php
 /*
-Flow: Datos Extra
 Page: profile.php, user-edit.php
 Header: true
 Position: profile
-Clear: true
 */
 
 

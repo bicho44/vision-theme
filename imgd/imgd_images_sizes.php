@@ -121,9 +121,6 @@ if(!function_exists('imgd_has_slideshow_thumbnail')) {
     }
 }
 
-
-
-
 if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 	/**
 	 * Retrieve SlideShow Image thumbnail ID.
