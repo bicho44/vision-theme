@@ -12,7 +12,7 @@ get_header(); ?>
 <?php
 $opciones_imgd = get_option('opciones_imgd');
 
-$description = $opciones_imgd['imgd_description'][0];
+//$description = $opciones_imgd['imgd_description'][0];
 
 $video = $opciones_imgd['imgd_video'][0];
 $videolink = $opciones_imgd['imgd_video_link'];
@@ -33,7 +33,7 @@ $slider_size = $opciones_imgd['imgd_slider_size'];
 //var_dump($video);
 
  ?>
-<?php if($description!=0): ?>
+<?php if(isset($description) && $description!=0): ?>
 <div id="description" class="container">
 	<blockquote>
 	<?php echo bloginfo( 'description' );?>

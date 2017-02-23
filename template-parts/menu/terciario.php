@@ -6,11 +6,8 @@
 *
 * @package Turismo_InterOceánico
 */
-if ( is_active_sidebar( 'sidebar-3' )  ) : ?>
+if ( is_active_sidebar( 'front-page-sidebar-2' )  ) : ?>
   <aside id="terciary" class="widget-area col-md-3" role="complementary">
-  <?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
-    <?php dynamic_sidebar( 'sidebar-3' ); ?>
-  <?php endif; ?>
-
+    <?php dynamic_sidebar( 'front-page-sidebar-2' ); ?>
   </aside><!-- #secondary -->
 <?php endif; ?>

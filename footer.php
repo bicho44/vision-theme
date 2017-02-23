@@ -8,21 +8,23 @@
  *
  * @package Turismo_InterOceánico
  */
-
+$class="align-right";
 ?>
 	<div class="wrapfooter">
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 				<div class="row">
 					<?php if ( is_active_sidebar( 'footer-1-sidebar' ) ) { ?>
+					<?php $class="col-md-8 align-right"; ?>
     					<?php dynamic_sidebar( 'footer-1-sidebar' ); ?>
 					<?php } ?>
 					
 					<?php if ( is_active_sidebar( 'footer-2-sidebar' ) ) { ?>
+					<?php $class="col-md-4 align-right"; ?>
 							<?php dynamic_sidebar( 'footer-2-sidebar' ); ?>
 					<?php } ?>
 
-					<div class="col-md-4">
+					<div class=<?php echo $class;?>>
 					<!-- Menu Social -->
 					<?php get_template_part('template-parts/menu', 'social'); ?>
 
