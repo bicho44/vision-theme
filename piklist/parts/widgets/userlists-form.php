@@ -10,22 +10,15 @@ piklist(
     )
 );
 
+//piklist::pre(get_editable_roles());
+
 piklist('field', array(
 'type' => 'select'
-,'field' => 'imgd_asoc_widget_widget_seleccion'
-,'columns' => 12
+,'field' => 'imgd_asoc_widget_roles'
 ,'choices' =>  piklist(
-              get_posts(
-                 array(
-                  'post_type' => 'imgd_programa'
-                  ,'posts_per_page' => 12
-                  ,'orderby' => 'post_date'
-                 )
-                 ,'objects'
-               )
+              get_editable_roles()
                ,array(
-                 'ID'
-                 ,'post_title'
+                 'name','name'
                )
 )
 ));
@@ -76,7 +69,7 @@ piklist('field', array(
     ,'field' => 'imgd_asoc_widget_thumb_sizes'
     , 'label' => __('Tamaño del Thumbnail', 'imgd')
     ,'choices' =>  get_intermediate_image_names()
-    ,'value' => 'thumbnail'
+    ,'value' => 'stamp'
     ,'conditions' => array(
                         array(
                             'field' => 'imgd_asoc_widget_thumb'
@@ -90,9 +83,8 @@ piklist('field', array(
 
 <ul>
     <li>Cantidad a mostrar</li>
-    <li>Formato de la imagen</li>
     <li>Link a listado de notas</li>
     <li>Link a Listado de Asociados</li>
-    <li>Opcion de listado de asociados mas Activos</li>
+    <li>Orden por de asociados mas Activos</li>
 </ul>
 

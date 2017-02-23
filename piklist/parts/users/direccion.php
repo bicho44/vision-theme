@@ -29,25 +29,25 @@ Order: 30
         ,'label' => __('Estado / Provincia', 'imgd')
         ,'columns' => 4
         ,'choices' => ''
+      ) 
+    ,array(
+      'type' => 'select'
+      ,'field' => 'imgd_user_country'
+      ,'label' => __('País', 'imgd')
+      ,'attributes' => array(
+        'class' => 'text'
       )
-      
-    , array(
-    'type' => 'select'
-    ,'field' => 'imgd_user_country'
-    ,'label' => __('País', 'imgd')
-    ,'attributes' => array(
-      'class' => 'text'
-    )
-    ,'value'=> 6
-    ,'choices' => array(
-        '' => __('Seleccione un País', 'imgd')
-      ) + imgd_paises()
+      ,'columns' => 3
+      ,'value'=> 54
+      ,'choices' => array(
+          '' => __('Seleccione un País', 'imgd')
+          ) + imgd_paises()
       )
       ,array(
         'type' => 'text'
         ,'field' => 'imgd_user_postal_code'
         ,'label' => __('Postal Code', 'imgd')
-        ,'columns' => 3
+        ,'columns' => 4
       )
     )
   ));
