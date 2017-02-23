@@ -66,7 +66,7 @@ $slider_size = $opciones_imgd['imgd_slider_size'];
 
 <?php if (!$isMobile->isMobile()) {?>
 	<?php if ( is_active_sidebar( 'front-page-sidebar' ) ) { ?>
-	<div class="container align-center">
+	<div class="container text-center">
 			<?php dynamic_sidebar( 'front-page-sidebar' ); ?>
 	</div>
 	<?php } ?>
