@@ -13,19 +13,19 @@ Order: 30
     ,'fields' => array(
       array(
         'type' => 'text'
-        ,'field' => 'ungrouped_address_1'
+        ,'field' => 'imgd_user_address'
         ,'label' => __('Street Address', 'imgd')
         ,'columns' => 12
       )
       ,array(
         'type' => 'text'
-        ,'field' => 'ungrouped_city'
+        ,'field' => 'imgd_user_city'
         ,'label' => __('City', 'imgd')
         ,'columns' => 5
       )
       ,array(
         'type' => 'text'
-        ,'field' => 'ungrouped_state'
+        ,'field' => 'imgd_user_state'
         ,'label' => __('Estado / Provincia', 'imgd')
         ,'columns' => 4
         ,'choices' => ''
@@ -33,19 +33,19 @@ Order: 30
       
     , array(
     'type' => 'select'
-    ,'field' => 'ungrouped_country'
+    ,'field' => 'imgd_user_country'
     ,'label' => __('País', 'imgd')
     ,'attributes' => array(
       'class' => 'text'
     )
-    ,'value'=>'Argentina'
+    ,'value'=> 6
     ,'choices' => array(
         '' => __('Seleccione un País', 'imgd')
       ) + imgd_paises()
       )
       ,array(
         'type' => 'text'
-        ,'field' => 'ungrouped_postal_code'
+        ,'field' => 'imgd_user_postal_code'
         ,'label' => __('Postal Code', 'imgd')
         ,'columns' => 3
       )

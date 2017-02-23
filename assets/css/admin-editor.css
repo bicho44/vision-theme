@@ -1469,8 +1469,8 @@ fieldset[disabled] a.more-link {
   color: #fff;
   margin-top: 20px;
 }
-.wrapfooter h4 {
-  color: #fff;
+.wrapfooter h2 {
+  color: #808080;
 }
 .wrapfooter .site-footer ul {
   padding-left: 0;
@@ -1484,13 +1484,13 @@ fieldset[disabled] a.more-link {
   font-size: 10px;
 }
 .credits {
-  font-size: 10px;
+  font-size: 11px;
   text-align: center;
   color: #222222;
 }
 .credits a {
-  color: #222222;
+  color: #777777;
 }
 .credits a:hover {
-  color: #222222;
+  color: #333333;
 }

@@ -251,9 +251,10 @@ animation:         KEYFRAME-NAME 5s infinite;
     color: @footer-text-color;
     margin-top: @footer-margin-top;
 
-    h4 {
-        color: @footer-text-color;
+    h2 {
+        color: darken(@footer-text-color,50);
     }
+
     .site-footer {
         ul{.list-unstyled;}
         a {
@@ -267,11 +268,11 @@ animation:         KEYFRAME-NAME 5s infinite;
 }
 
 .credits {
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
     color: @gray-darker;
     a{
-       color: @gray-darker;
-        &:hover{color:@gray-darker;}
+       color: @gray-light;
+        &:hover{color:@gray-dark;}
     }
 }

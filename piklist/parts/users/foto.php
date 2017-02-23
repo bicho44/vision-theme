@@ -20,14 +20,14 @@ piklist('field', array(
 ));
 piklist('field', array(
     'type' => 'datepicker'
-    ,'field' => 'date'
+    ,'field' => 'imgd_user_cumple'
     ,'label' => __('Cumpleaños', 'piklist-demo')
     ,'description' => __('Seleccione una fecha de cumpleaños', 'piklist-demo')
     ,'options' => array(
-      'dateFormat' => 'd/m/Y'
+      'dateFormat' => 'd/m/y'
     )
     ,'attributes' => array(
       'size' => 12
     )
-    ,'value' => date('d/m/Y', time() + 604800)
+    ,'value' => date('d/m/y', time() + 604800)
   ));
