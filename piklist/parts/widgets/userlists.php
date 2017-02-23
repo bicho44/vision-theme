@@ -31,7 +31,7 @@ foreach ( $blogusers as $user ) {
     $thumbnail_id = 0;
     $slider_size = $settings['imgd_asoc_widget_thumb_sizes'];
     
-    $class = $settings['imgd_asoc_widget_thumb_format'];
+    $class = $settings['imgd_asoc_widget_thumb_format'][0];
     $metas = get_user_meta( $user->id);
 
     $state = "";
