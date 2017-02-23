@@ -5,9 +5,7 @@ Tab: Datos Extra
 Flow: Datos Usuario
 Post Type: user
 Order: 10
-
 */
-
 
 piklist('field', array(
     'type' => 'file'
@@ -18,6 +16,17 @@ piklist('field', array(
         ,'button' => __('Imagen de usuario', 'imgd')
     )
 ));
+
+piklist(
+    'field', 
+    array(
+        'type' => 'text'
+        ,'field' => 'imgd_user_medio'
+        ,'value' => ''
+        ,'label' => __('Medio al que representa', 'imgd')
+    )
+);
+
 piklist('field', array(
     'type' => 'datepicker'
     ,'field' => 'imgd_user_cumple'
@@ -30,4 +39,5 @@ piklist('field', array(
       'size' => 12
     )
     ,'value' => date('d/m/y', time() + 604800)
-  ));
+  )
+);
