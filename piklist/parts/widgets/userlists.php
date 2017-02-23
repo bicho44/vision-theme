@@ -11,16 +11,15 @@ $country = imgd_paises();
 <?php echo $before_title; ?>
  <a href="#"><?php echo $settings['imgd_titulo_asociados']; ?></a>
 <?php echo $after_title; ?>
- <?php /*
+ <?php 
 $blogusers = get_users( array( 
     'role' => 'author'
  ) );
- */?>
+ ?>
   <?php 
-$blogusers = get_users( array( 
+/*$blogusers = get_users( array( 
     'role' => 'Administrator'
- ) );?>
-<ul class="list-unstyled">
+ ) );*/?>
 <?php 
 // Array of stdClass objects.
 foreach ( $blogusers as $user ) {

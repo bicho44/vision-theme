@@ -35,7 +35,6 @@ add_action( 'after_setup_theme', 'turismointer_custom_header_setup' );
 if ( ! function_exists( 'turismointer_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
- *
  * @see turismointer_custom_header_setup().
  */
 function turismointer_header_style() {
