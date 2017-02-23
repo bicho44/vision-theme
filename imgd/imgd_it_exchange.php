@@ -17,7 +17,7 @@ function imgd_exchange_product_columns( $columns ) {
     unset ($columns['it_exchange_product_inventory']);
     unset ($columns['it_exchange_product_purchases']);
 
-    $columns['image']                             = __( 'Imagen', 'it-l10n-ithemes-exchange' );
+    $columns['image']   = __( 'Imagen', 'it-l10n-ithemes-exchange' );
 
     $n_columns = array();
     $move = 'image'; // what to move

@@ -1,8 +1,10 @@
 <?php
 /*
+Flow: Datos Usuario
 Page: profile.php, user-edit.php
 Header: true
-Position: profile
+Post Type: user
+Position: title
 */
 
 
