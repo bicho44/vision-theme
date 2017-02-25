@@ -32,7 +32,9 @@
         $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);                
       ?>
       <a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"></a>
-      <div class="carousel-caption"><?php the_title(); ?></div>
+      <div class="carousel-caption">
+        <h2><?php the_title(); ?></h2>
+      </div>
     </div>
     
     <?php endwhile; endif; ?>
