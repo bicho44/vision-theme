@@ -1187,17 +1187,31 @@ animation:         KEYFRAME-NAME 5s infinite;
   left: 0;
   z-index: 500;
 }
+.navbar-default,
+.navbar-fixed-top {
+  transition: all 1s;
+}
+.navbar-brand {
+  padding: 10px 5px 0 5px;
+}
 .navbar-fixed-top {
   background-color: rgba(255, 255, 255, 0.95);
-  height: 60px;
 }
 .imgd-destacados {
-  background-color: #f0f3df;
+  background-color: #cce6ff;
   padding: 16px 0;
-  margin-top: 20px;
 }
 #carrousel-bootstrap {
   margin-bottom: 10px;
+}
+.carousel {
+  color: white;
+}
+.carousel h1,
+.carousel h2,
+.carousel h3,
+.carousel h4 {
+  color: white;
 }
 .newsfeature article {
   position: relative;
@@ -1237,57 +1251,6 @@ animation:         KEYFRAME-NAME 5s infinite;
 }
 .newsfeature article header.destacados-caption:hover .destacados-caption-texto {
   display: block;
-}
-.listado-paises .argentina h2 {
-  padding-left: 30px;
-  background: url('../images/paises/argentina.png') no-repeat;
-  background-position: left center;
-  background-size: 25px 25px;
-  margin-bottom: 10px;
-}
-.listado-paises .chile h2 {
-  padding-left: 30px;
-  background: url('../images/paises/chile.png') no-repeat;
-  background-position: left center;
-  background-size: 25px 25px;
-}
-.listado-paises .uruguay h2 {
-  padding-left: 30px;
-  background: url('../images/paises/uruguay.png') no-repeat;
-  background-position: left center;
-  background-size: 25px 25px;
-}
-.listado-paises .espana h2 {
-  padding-left: 30px;
-  background: url('../images/paises/espana.png') no-repeat;
-  background-position: left center;
-  background-size: 25px 25px;
-}
-.listado-paises .republica-dominicana h2 {
-  padding-left: 30px;
-  background: url('../images/paises/dominicana.png') no-repeat;
-  background-position: left center;
-  background-size: 25px 25px;
-}
-#totop {
-  color: rgba(255, 255, 255, 0.4);
-  background-color: rgba(152, 95, 13, 0.2);
-  position: fixed;
-  display: none;
-  outline: none;
-  right: 15px;
-  bottom: 15px;
-  border-color: rgba(152, 95, 13, 0.2);
-}
-#totop:hover {
-  color: #fff;
-  background-color: rgba(176, 109, 15, 0.7);
-}
-@media (min-width: 992px) {
-  #totop {
-    right: 40px;
-    bottom: 40px;
-  }
 }
 .wp-post-image {
   display: block;
@@ -1361,9 +1324,6 @@ fieldset[disabled] a.more-link {
 .comment-form-email,
 .comment-form-url {
   width: 50%;
-}
-.navbar-brand {
-  padding: 15px 15px 0 15px;
 }
 .image-thumbnail {
   margin-bottom: 10px;
@@ -1492,5 +1452,25 @@ fieldset[disabled] a.more-link {
   color: #777777;
 }
 .credits a:hover {
-  color: #333333;
+  color: #eeeeee;
+}
+#totop {
+  color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: none;
+  outline: none;
+  right: 15px;
+  bottom: 15px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+#totop:hover {
+  color: #fff;
+  background-color: rgba(0, 13, 25, 0.7);
+}
+@media (min-width: 992px) {
+  #totop {
+    right: 40px;
+    bottom: 40px;
+  }
 }

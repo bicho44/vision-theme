@@ -10,6 +10,9 @@ $args = array('post_type' => array('post', 'page','imgd_programa', 'portfolio_it
 'ignore_sticky_posts'=>true
 );
 
+$cant_cols = 12 / $destacadoscant;
+$post_class = 'col-md-'.$cant_cols;
+
 $loop = new WP_Query($args);
 
 if ($loop->have_posts()) {?>
@@ -27,7 +30,7 @@ if ($loop->have_posts()) {?>
     $destacadosID[] = get_the_ID();
     ?>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-3'); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
       
       <?php
       get_template_part('template-parts/content-front/ficha', 'destacada');

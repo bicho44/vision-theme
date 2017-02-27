@@ -13,7 +13,7 @@
 
         var scroll = $(window).scrollTop();
 
-        if (scroll >= navbar.outerHeight(true)) {
+        if (scroll >= navbar.outerHeight(true)+15) {
             navbar.addClass("slideInDown navbar-fixed-top");
         } else {
             navbar.removeClass("slideInDown navbar-fixed-top");
@@ -21,6 +21,7 @@
         
     });
 }());
+
 
 (function(){
   $(window).scroll(function () {

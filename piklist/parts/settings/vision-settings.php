@@ -3,7 +3,25 @@
 Title: Vision Options
 Setting: opciones_imgd
 Tab: Vision Home Page
+Flow: Opciones Vision
+
 */
+
+piklist(
+    'field', 
+    array(
+        'type' => 'select'
+        ,'field' => 'imgd_navbar_style'
+        ,'description' => __('Color de la Barra de Navegación', 'imgd')
+        ,'value' => 'navbar-default'
+        ,'label' => __('Nav Bar Style', 'imgd')
+        , 'choices' => array(
+            'navbar-default' => __('Nav Bar Blanca', 'imgd'),
+            'navbar-blue' => __('Nav Bar Azul', 'imgd')
+        )
+    )
+);
+
 
 piklist (
     'field',
@@ -147,7 +165,6 @@ foreach ($registered_post_types as $post_type => $value)
     )
 );
 
-
 piklist (
     'field',
     array(
@@ -183,7 +200,7 @@ piklist(
                 )
         ,'attributes' => array(
                 'class' => 'small-text'
-        )
+        )       
     )
 );
 
@@ -210,7 +227,7 @@ piklist (
 piklist(
     'field', 
     array(
-        'type' => 'text'
+        'type' => 'select'
         ,'field' => 'imgd_desta_cant'
         ,'description' => __('Cuantas Noticias Destacadas', 'imgd')
         ,'value' => '6'
@@ -223,6 +240,12 @@ piklist(
                 )
         ,'attributes' => array(
                 'class' => 'small-text'
+        )
+        , 'choices' => array(
+            2 => 2,
+            3 => 3,
+            4 => 4,
+            6 => 6
         )
     )
 );

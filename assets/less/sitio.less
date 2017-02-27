@@ -12,36 +12,36 @@ animation:         KEYFRAME-NAME 5s infinite;
     z-index: 500;
 }
 
-.content-area {
-    //margin-top: 65px;
-}
-
+// ------------- NAV BAR -------------//
 .navbar-default,
 .navbar-fixed-top {
-    //transition: all .5s;
+    transition: all 1s;
 }
-
+.navbar-brand {
+    padding: 10px 5px 0 5px;
+}
 .navbar-fixed-top {
     background-color: fade(#fff, 95);
-    //transition: all .5s;
-    height: 60px;
 }
 
-.imgd-destacados-news {
-    //margin-top: 25px;
-}
 
 .imgd-destacados {
-    background-color: lighten(@vision-verde, 20);
+    background-color: lighten(@vision-azul-base, 60);
     padding: 16px 0;
-    margin-top: 20px;
 }
 
+// --------- CARROUSEL 
 #carrousel-bootstrap {
     margin-bottom: (@line-height-computed / 2);
 }
+.carousel{
+    color: white;
+    h1,h2,h3,h4 {color:white;}
+}
 
+// --------- Noticias Destacadas
 .newsfeature {
+
     article {
         position: relative;
 
@@ -53,7 +53,6 @@ animation:         KEYFRAME-NAME 5s infinite;
                 }
             }
         }
-
 
         header.destacados-caption {
             transition: all .5s;
@@ -90,66 +89,15 @@ animation:         KEYFRAME-NAME 5s infinite;
     }
 }
 
-.listado-paises {
-    .argentina h2 {
-        padding-left: 30px;
-        background: url('../images/paises/argentina.png') no-repeat;
-        background-position: left center;
-        background-size: 25px 25px;
-        margin-bottom: 10px;
-    }
-    .chile h2 {
-        padding-left: 30px;
-        background: url('../images/paises/chile.png') no-repeat;
-        background-position: left center;
-        background-size: 25px 25px;
-    }
-    .uruguay h2 {
-        padding-left: 30px;
-        background: url('../images/paises/uruguay.png') no-repeat;
-        background-position: left center;
-        background-size: 25px 25px;
-    }
-    .espana h2 {
-        padding-left: 30px;
-        background: url('../images/paises/espana.png') no-repeat;
-        background-position: left center;
-        background-size: 25px 25px;
-    }
-    .republica-dominicana h2 {
-        padding-left: 30px;
-        background: url('../images/paises/dominicana.png') no-repeat;
-        background-position: left center;
-        background-size: 25px 25px;
-    }
-}
-
-#totop {
-    color: fade(@white, 40%);
-    background-color: fade(darken(@brand-warning, 30), 20%);
-    position: fixed;
-    display: none;
-    outline: none;
-    right: 15px;
-    bottom: 15px;
-    border-color: fade(darken(@brand-warning, 30), 20%);
-    &:hover {
-        color: @white;
-        background-color: fade(darken(@brand-warning, 25), 70%);
-    }
-    @media (min-width: @screen-md-min) {
-        right: 40px;
-        bottom: 40px;
-    }
-}
-
 .wp-post-image {
     .img-responsive();
     margin-bottom: 20px;
 }
 .more-link{
     .btn;
+
 }
+
 .page-header {
     margin-top: 0;
     .page-title {
@@ -166,9 +114,7 @@ animation:         KEYFRAME-NAME 5s infinite;
     width: 50%;
 }
 
-.navbar-brand {
-    padding: 15px 15px 0 15px;
-}
+
 
 .image-thumbnail {
     margin-bottom: (@line-height-computed / 2);
@@ -243,6 +189,7 @@ animation:         KEYFRAME-NAME 5s infinite;
     }
 
 }
+
 //------------- FOOTER ----------//
 .wrapfooter {
     background-color: @footer-background-color;
@@ -273,6 +220,26 @@ animation:         KEYFRAME-NAME 5s infinite;
     color: @gray-darker;
     a{
        color: @gray-light;
-        &:hover{color:@gray-dark;}
+        &:hover{color:@gray-lighter;}
+    }
+}
+
+// ---------------- Boton To the Top
+#totop {
+    color: fade(@white, 40%);
+    background-color: fade(darken(@brand-primary, 30), 20%);
+    position: fixed;
+    display: none;
+    outline: none;
+    right: 15px;
+    bottom: 15px;
+    border-color: fade(darken(@brand-primary, 30), 20%);
+    &:hover {
+        color: @white;
+        background-color: fade(darken(@brand-primary, 25), 70%);
+    }
+    @media (min-width: @screen-md-min) {
+        right: 40px;
+        bottom: 40px;
     }
 }
