@@ -30,7 +30,7 @@ if ($loop->have_posts()) {?>
     $destacadosID[] = get_the_ID();
     ?>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class($post_class.' col-sm-6'); ?>>
       
       <?php
       get_template_part('template-parts/content-front/ficha', 'destacada');
