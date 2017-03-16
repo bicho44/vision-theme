@@ -1176,11 +1176,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/piklist\/parts\/workflows\/options.php": {
+	"\/piklist\/parts\/workflows\/Options.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/piklist\/parts\/workflows\/options.php",
+		"inputAbbreviatedPath": "\/piklist\/parts\/workflows\/Options.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
