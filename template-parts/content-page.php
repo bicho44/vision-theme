@@ -25,7 +25,6 @@
 
 			echo wpdocs_custom_taxonomies_terms_links();
 
-
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'turismointer' ),
 				'after'  => '</div>',
@@ -43,7 +42,7 @@
 						esc_html__( 'Edit %s', 'turismointer' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
-					'<span class="edit-link">',
+					'<span class="edit-link btn">',
 					'</span>'
 				);
 			?>

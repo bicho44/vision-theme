@@ -8,7 +8,7 @@
  */
 
 ?>
-<div class="thumbnail">
+<div class="thumbnail ">
 <?php
 // Must be inside a loop.
 if (has_post_thumbnail()) {?>
