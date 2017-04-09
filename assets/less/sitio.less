@@ -28,6 +28,8 @@ animation:         KEYFRAME-NAME 5s infinite;
 .imgd-destacados {
     background-color: lighten(@vision-azul-base, 60);
     padding: 16px 0;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 // --------- CARROUSEL 
@@ -89,13 +91,27 @@ animation:         KEYFRAME-NAME 5s infinite;
     }
 }
 
+.format-link::before{
+    font-family: 'FontAwesome', sans-serif;
+    font-size:  @font-social-size*2;
+    content:  "\f103";
+    color: rgba(0,0,0,.5);
+    display: inline;
+
+    z-index: 1000;
+    vertical-align: top;
+    top: 10%;
+    right: 10%;
+
+    position: absolute;
+}
+
 .wp-post-image {
     .img-responsive();
     margin-bottom: 20px;
 }
 .more-link{
     .btn;
-
 }
 
 .page-header {
@@ -155,6 +171,9 @@ animation:         KEYFRAME-NAME 5s infinite;
 // Ultimas novedades
 .tres-columnas {
     background-color: @gray-lighter;
+    padding: 20px 0;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 .ultimas {

@@ -10097,6 +10097,18 @@ animation:         KEYFRAME-NAME 5s infinite;
 .newsfeature article header.destacados-caption:hover .destacados-caption-texto {
   display: block;
 }
+.format-link::before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 46.8px;
+  content: "\f103";
+  color: rgba(0, 0, 0, 0.5);
+  display: inline;
+  z-index: 1000;
+  vertical-align: top;
+  top: 10%;
+  right: 10%;
+  position: absolute;
+}
 .wp-post-image {
   display: block;
   max-width: 100%;

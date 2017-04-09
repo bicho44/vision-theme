@@ -78,7 +78,7 @@ add_action( 'after_setup_theme', 'turismointer_setup' );
  * @global int $content_width
  */
 function turismointer_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'turismointer_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'turismointer_content_width', 970 );
 }
 add_action( 'after_setup_theme', 'turismointer_content_width', 0 );
 

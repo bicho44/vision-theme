@@ -25,6 +25,11 @@ $blogusers = get_users( array(
 /*$blogusers = get_users( array( 
     'role' => 'Administrator'
  ) );*/?>
+
+<div class="panel panel-default">
+<!--    <div class="panel-heading"></div>-->
+    <div class="panel-body">
+
 <?php 
 // Array of stdClass objects.
 foreach ( $blogusers as $user ) {
@@ -69,4 +74,10 @@ foreach ( $blogusers as $user ) {
     </div>
 
 <?php } // End Foreach?>
+
+</div>
+        <div class="panel-footer"></div>
+    </div>
+
+<?php wp_reset_query(); ?>
 <?php echo $after_widget; ?>
