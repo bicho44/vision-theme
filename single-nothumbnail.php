@@ -3,7 +3,7 @@
 PostType Page Template: Sin Thumbnail
 Description: Para las noticias que la imagen principal es muy pequeña no pone la imagen principal en la cabecera
 */
-?>
+
 
 get_header(); ?>
 
