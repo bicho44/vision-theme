@@ -24,6 +24,7 @@ $destanews = $opciones_imgd['imgd_desta_news'][0];
 $destanewscant = $opciones_imgd['imgd_desta_news_cant'][0];
 
 $columnas = $opciones_imgd['imgd_columnas'][0];
+$columnascant = $opciones_imgd['imgd_colums_cant'][0];
 
 $slider = $opciones_imgd['imgd_slider'][0];
 $slider_size = $opciones_imgd['imgd_slider_size'];
@@ -76,14 +77,16 @@ $slider_size = $opciones_imgd['imgd_slider_size'];
 	<?php include( locate_template( 'template-parts/content-front/destacados.php' ) ); ?>
 <?php } ?>
 
- <?php
- while ( have_posts() ) : the_post();
- 	the_content();
- endwhile; // End of the loop.
- ?>
-
 <?php if ($columnas!=0){?>
 	<?php include( locate_template( 'template-parts/content-front/columnas.php' ) ); ?>
 <?php } ?>
+
+<div class="container">
+	<?php
+	while ( have_posts() ) : the_post();
+		the_content();
+	endwhile; // End of the loop.
+	?>
+</div>
 
 <?php get_footer(); ?>

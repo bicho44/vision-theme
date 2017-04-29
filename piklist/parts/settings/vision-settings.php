@@ -268,3 +268,24 @@ piklist (
         'position' => 'wrap'
     )
 );
+
+piklist(
+    'field', 
+    array(
+        'type' => 'text'
+        ,'field' => 'imgd_colums_cant'
+        ,'description' => __('Cuantas Noticias en la lista de columnas', 'imgd')
+        ,'value' => '6'
+        ,'label' => __('Cantidad', 'imgd')
+        , 'conditions' => array(
+                    array(
+                        'field' => 'imgd_columnas'
+                        , 'value' => 1
+                    )
+                )
+        ,'attributes' => array(
+                'class' => 'small-text'
+        )
+        
+    )
+);
