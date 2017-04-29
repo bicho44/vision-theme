@@ -7,7 +7,9 @@
 if (!isset($destacadosID)){
   $destacadosID = array();
 }
-
+if (!isset($columnascant)){
+  $columnascant = 12;
+}
 /**
 * Saco esto para que sólo se muestren las Noticias
 * 'post_type' => array('post', 'page','imgd_programa'),
