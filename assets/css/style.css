@@ -10044,6 +10044,8 @@ animation:         KEYFRAME-NAME 5s infinite;
 .imgd-destacados {
   background-color: #cce6ff;
   padding: 16px 0;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 #carrousel-bootstrap {
   margin-bottom: 10px;
@@ -10261,6 +10263,9 @@ fieldset[disabled] a.more-link {
 }
 .tres-columnas {
   background-color: #eeeeee;
+  padding-top: 16px;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 .ultimas {
   border-bottom: 1px solid #777777;
@@ -10298,6 +10303,9 @@ fieldset[disabled] a.more-link {
 .ultimas img {
   float: left;
   margin-right: 10px;
+}
+.ultimas .entry-content {
+  margin-top: 0;
 }
 .entry-header .entry-meta {
   text-align: right;
